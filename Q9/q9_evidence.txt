@@ -1,0 +1,17 @@
+Question 9 Submission Evidence
+
+a) SSH Connection
+- SSH command used:
+  ssh -i "G:\CAMPUS\4TH YEAR SEM\1ST\Assignment02\Q7\aws_linux.pem" ec2-user@54.152.145.21
+- Connection status: Pending retry after PEM ACL fix (`icacls` applied)
+- Login prompt seen (yes/no): Not yet (last SSH attempt failed due key permissions)
+
+b) OpenSSL version on EC2
+- Command: openssl version
+- Output: Pending (run after successful SSH login)
+
+c) Simple hash or encryption command on EC2
+- Command(s) used: echo "Hello from EC2" > demo.txt; openssl dgst -sha256 demo.txt
+- Output: Pending (run after successful SSH login)
+
+Date/Time: 2026-02-18

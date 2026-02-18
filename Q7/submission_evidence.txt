@@ -1,0 +1,34 @@
+Question 7 Submission Evidence
+
+a) AWS Console login
+- Completed: Yes
+- Region: us-east-1 (from DNS)
+
+b) Amazon Linux EC2 instance creation
+- Instance Name: (not provided)
+- AMI used: Amazon Linux (assumed)
+- Instance Type: __________ (copy exact value from EC2 Details, e.g., t2.micro)
+
+c) Key pair
+- Key Pair Name: aws_linux (assumed from PEM name)
+- PEM file path: G:\CAMPUS\4TH YEAR SEM\1ST\Assignment02\Q7\aws_linux.pem
+
+d) Security Group
+- SSH port 22 allowed: Yes (rule ID: sgr-0b9b91fd6d2f90334)
+- Security group rule ID: sgr-0b9b91fd6d2f90334
+- Source CIDR/My IP: __________ (from inbound rule sgr-0b9b91fd6d2f90334)
+
+e) Instance running state
+- Instance ID: i-0c49bed4e479f8289
+- Public IPv4: 54.152.145.21
+- Public DNS: ec2-54-152-145-21.compute-1.amazonaws.com
+- Private IPv4: 172.31.23.8
+- State: Running
+- Hostname: ip-172-31-23-8.ec2.internal
+- Private DNS: ip-172-31-23-8.ec2.internal
+
+SSH command used from Windows PowerShell:
+ssh -i "G:\CAMPUS\4TH YEAR SEM\1ST\Assignment02\Q7\aws_linux.pem" ec2-user@ec2-54-152-145-21.compute-1.amazonaws.com
+
+Alternative using public IP:
+ssh -i "G:\CAMPUS\4TH YEAR SEM\1ST\Assignment02\Q7\aws_linux.pem" ec2-user@54.152.145.21
